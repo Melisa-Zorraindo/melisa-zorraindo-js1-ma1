@@ -48,10 +48,8 @@ for (let i = 0; i < paragraphs.length; i++) {
 // Question 6
 
 let resultsContainer = document.querySelector(".results");
-resultsContainer.innerHTML = `<p style="background-color: yellow"> New paragraph </p>`;
-
-// or remove the inline style and add the following line of code
-// resultsContainer.style.backgroundColor = "yellow";
+resultsContainer.innerHTML = `<p> New paragraph </p>`;
+resultsContainer.style.backgroundColor = "yellow";
 
 // Question 7
 
@@ -73,11 +71,11 @@ function createCats(cats) {
     let catAge = cats[i].age || "Age unknown";
 
     // or with an if statement
-    /*     let catAge = "Age unknown";
+    /* let catAge = "Age unknown";
     if (cats[i].age) {
       catAge = cats[i].age;
-    }
- */
+    } */
+
     // create HTML for every object in the array
     html += `<div>
                <h5>${cats[i].name}</h5>
